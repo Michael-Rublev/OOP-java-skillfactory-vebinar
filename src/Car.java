@@ -40,6 +40,5 @@ public class Car extends Transport implements Rideable {
     @Override
     public void ride() {
         System.out.println("Riding car");
-        swim();
     }
 }

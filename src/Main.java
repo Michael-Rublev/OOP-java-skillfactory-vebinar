@@ -12,12 +12,19 @@ public class Main {
         ;*/
 
         //null constructor make only mazda default parameters in car class
-        Car mazda = new Car();
-        Car lamba = new Car("Lamba", 250, false, 20);
+/*        Car lamba = new Car("Lamba", 250, false, 20);
         System.out.println(mazda.countSpeed(5));
         System.out.println(lamba.countSpeed(5));
         float mazdaSpeed = mazda.countSpeed(7);
-        System.out.println(mazdaSpeed);
+        System.out.println(mazdaSpeed);*/
+        Rideable mazda = new Car();
+        Rideable boat = new Boat();
+        rideRideable(new Car());
+        rideRideable(new Boat());
 
+    }
+
+    public static void rideRideable(Rideable rideable) {
+        rideable.ride();
     }
 }
