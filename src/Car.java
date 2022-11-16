@@ -4,6 +4,13 @@ public class Car {
     boolean isAwd;
     float acceleration;
 
+    //Added default constructor
+    public Car(String brand, int horsePower, boolean isAwd, float acceleration) {
+        this.brand = brand;
+        this.horsePower = horsePower;
+        this.isAwd = isAwd;
+        this.acceleration = acceleration;
+    }
 
     // Method void, start engine car
     void start() {
