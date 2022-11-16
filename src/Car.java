@@ -7,6 +7,7 @@ public class Car extends Transport implements Rideable {
     //Added null constructor
     Car() {
         this("Mazda", 100, false, 10);
+
 /*       brand = "Mazda";
        horsePower = 0;
        isAwd = false;

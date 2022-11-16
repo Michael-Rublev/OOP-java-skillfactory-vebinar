@@ -1,3 +1,5 @@
+import incapsulation.Boat;
+
 public class Main {
     public static void main(String[] args) {
         //Basic constructor
@@ -18,9 +20,11 @@ public class Main {
         float mazdaSpeed = mazda.countSpeed(7);
         System.out.println(mazdaSpeed);*/
         Rideable mazda = new Car();
-        Rideable boat = new Boat();
+        //Rideable boat = new Boat();
         rideRideable(new Car());
-        rideRideable(new Boat());
+        //rideRideable(new Boat());
+        //Transport transport = new Transport;
+        //transport.publicVal;
 
     }
 
