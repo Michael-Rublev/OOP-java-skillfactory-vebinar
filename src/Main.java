@@ -5,15 +5,19 @@ public class Main {
         mazda.brand = "Mazda";
         mazda.horsePower = 190;
         mazda.isAwd = false;
-        mazda.setAcceleration(10);*/
+        mazda.setAcceleration(10)
+        mazda.start();
+        lamba.start();
+        System.out.println(mazda.acceleration);
+        ;*/
 
         //null constructor make only mazda default parameters in car class
         Car mazda = new Car();
         Car lamba = new Car("Lamba", 250, false, 20);
         System.out.println(mazda.countSpeed(5));
         System.out.println(lamba.countSpeed(5));
-        //mazda.start();
-        //lamba.start();
-        //System.out.println(mazda.acceleration);
+        float mazdaSpeed = mazda.countSpeed(7);
+        System.out.println(mazdaSpeed);
+
     }
 }
