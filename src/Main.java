@@ -5,5 +5,7 @@ public class Main {
         mazda.horsePower = 190;
         mazda.isAwd = false;
         mazda.start();
+        mazda.setAcceleration(10);
+        System.out.println(mazda.acceleration);
     }
 }
