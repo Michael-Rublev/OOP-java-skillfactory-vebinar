@@ -6,10 +6,11 @@ public class Car {
 
     //Added null constructor
     Car() {
-       brand = "Mazda";
+        this("Mazda", 100, false, 10);
+/*       brand = "Mazda";
        horsePower = 0;
        isAwd = false;
-       acceleration = 10;
+       acceleration = 10;*/
     }
 
     //Added default constructor
@@ -28,5 +29,10 @@ public class Car {
     //method acceleration (setter)
     public void setAcceleration(float acceleration) {
         this.acceleration = acceleration;
+    }
+
+    //method countSpeed
+    float countSpeed(float time) {
+        return (100 / acceleration) * time;
     }
 }
