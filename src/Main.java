@@ -4,6 +4,6 @@ public class Main {
         mazda.brand = "Mazda";
         mazda.horsePower = 190;
         mazda.isAwd = false;
-        System.out.println(mazda.brand);
+        mazda.start();
     }
 }
