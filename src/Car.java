@@ -1,4 +1,4 @@
-public class Car extends Transport implements Rideable {
+public abstract class Car extends Transport implements Rideable {
     String brand;
     int horsePower;
     boolean isAwd;
@@ -7,10 +7,6 @@ public class Car extends Transport implements Rideable {
     //Added null constructor
     Car() {
         this("Mazda", 100, false, 10);
-/*       brand = "Mazda";
-       horsePower = 0;
-       isAwd = false;
-       acceleration = 10;*/
     }
 
     //Added default constructor
@@ -23,9 +19,7 @@ public class Car extends Transport implements Rideable {
     }
 
     // Method void, start engine car
-    void start() {
-        System.out.println(brand + " hase been started");
-    }
+    abstract void start();
 
     //method acceleration (setter)
     public void setAcceleration(float acceleration) {
